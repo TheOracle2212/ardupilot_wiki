@@ -61,7 +61,7 @@ QUAD FRAMES
     :alt: QUAD A TAIL
 
 .. note::
-    Quad A Tail and V Tail frames do not use the front motors for yaw control (NYT). The direction of motor rotation is not critical for basic operation, but unless the front motors spin in opposite directions, roll and pitch inputs will result in adverse yaw, resulting in less dynamic range of the yaw control.
+    Quad A Tail and V Tail frames do not use the front motors for yaw control, at least Not yet. The direction of motor rotation is not critical for basic operation, but unless the front motors spin in opposite directions, roll and pitch inputs will result in adverse yaw, resulting in less dynamic range of the yaw control.
 
 .. image:: ../images/m_01_06_quad_plus_rev.svg
     :target: ../_images/m_01_06_quad_plus_rev.svg
@@ -329,8 +329,9 @@ motors are spinning in the correction direction:
 
    .. tip::
 
-      Motor Direction is reversed simply by interchanging two of the
-         three ESC to motor power leads.
+      Motor Direction can be simply reversed by switching the outer two of three ESC to motor power leads.
+
+Note that for BUS ESC connections (see DroneCAN ESC configuration), the ESC nodes should be configured as to the corresponding motor position on the frame.
 
 Checking the motor numbering with the Mission Planner Motor test
 ================================================================
